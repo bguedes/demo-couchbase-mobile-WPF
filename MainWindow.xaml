@@ -1,0 +1,143 @@
+﻿<Window x:Class="EMonthly.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  
+        xmlns:local="clr-namespace:EMonthly"
+        mc:Ignorable="d"
+        Title="E-Monthly Windows Application" Height="450" Width="800" Background="White">
+    <Grid>
+        <Button Content="save" HorizontalAlignment="Left" Margin="678,20,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.88,-1" Click="Button_Click"/>
+        <ComboBox Name="OperationComboBox" HorizontalAlignment="Left" Margin="188,114,0,0" VerticalAlignment="Top" Width="48" >
+            <ComboBoxItem Content="" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="10" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="92"/>
+        </ComboBox>
+        <Label Content="Operation" HorizontalAlignment="Left" Margin="120,115,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="OperationTextBox" HorizontalAlignment="Left" Height="23" Margin="63,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Label Content="Tech Pub" HorizontalAlignment="Left" Margin="120,190,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="TechPubTextBox" HorizontalAlignment="Left" Height="23" Margin="63,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Label Content="Communication" HorizontalAlignment="Left" Margin="89,265,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="CommunicationTextBox" HorizontalAlignment="Left" Height="23" Margin="63,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Label Content="Warrenty administration" HorizontalAlignment="Left" Margin="49,348,0,0" VerticalAlignment="Top" Width="140"/>
+        <TextBox Name="WarrentyAdministrationTextBox" HorizontalAlignment="Left" Height="23" Margin="63,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Label Content="Maintenance" HorizontalAlignment="Left" Margin="348,115,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="MaintenanceTextBox" HorizontalAlignment="Left" Height="23" Margin="306,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Label Content="Logistics" HorizontalAlignment="Left" Margin="363,190,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="LogisticsTextBox" HorizontalAlignment="Left" Height="23" Margin="306,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Label Content="Commercial support" HorizontalAlignment="Left" Margin="308,270,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="CommercialSupportTextBox" HorizontalAlignment="Left" Height="23" Margin="306,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Label Content="OEM service" HorizontalAlignment="Left" Margin="337,347,0,0" VerticalAlignment="Top" Width="81"/>
+        <TextBox Name="OEMServiceTextBox" HorizontalAlignment="Left" Height="23" Margin="306,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Label Content="Tech assistance" HorizontalAlignment="Left" Margin="571,115,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox Name="TechAssistanceTextBox" HorizontalAlignment="Left" Height="23" Margin="553,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Label Content="CSC" HorizontalAlignment="Left" Margin="642,189,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="CSCTextBox" HorizontalAlignment="Left" Height="23" Margin="553,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Label Content="cost of operation" HorizontalAlignment="Left" Margin="573,269,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="CostOfOperationTextBox" HorizontalAlignment="Left" Height="23" Margin="553,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Label Content="Vendor management" HorizontalAlignment="Left" Margin="553,347,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="VendorManagementTextBox" HorizontalAlignment="Left" Height="23" Margin="553,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Label Content="Add a new Monthly Report" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,20,0,0" Width="166"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="25,40,0,0" VerticalAlignment="Top" Width="757"/>
+        <ComboBox Name="CustomerComboBox" HorizontalAlignment="Left" Margin="101,80,0,0" VerticalAlignment="Top" Width="93" SelectedValuePath="Content">
+            <ComboBoxItem Content=""></ComboBoxItem>
+            <ComboBoxItem Content="AEROFLOT"></ComboBoxItem>
+            <ComboBoxItem Content="CITYJET" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="COMLUX-KZ" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="GAZPROMAVIA" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="INTERJET" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="IRAERO" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="ROYAL THAI AIRFORCE" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="RUSJET" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="RUSSIA SFD" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="YAKUTIA" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="YAMAL" HorizontalAlignment="Left" Width="92"/>
+        </ComboBox>
+        <Label Content="Customer" HorizontalAlignment="Left" Margin="25,76,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="GlobalCommentTextBox" HorizontalAlignment="Left" Height="23" Margin="306,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="420" />
+        <Label Content="Global Comment" HorizontalAlignment="Left" Margin="199,73,0,0" VerticalAlignment="Top" Width="102"/>
+        <ComboBox Name="TechPubComboBox" HorizontalAlignment="Left" Margin="188,190,0,0" VerticalAlignment="Top" Width="48">
+            <ComboBoxItem Content="" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="10" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="92"/>
+        </ComboBox>
+        <ComboBox Name="CommunicationComboBox" HorizontalAlignment="Left" Margin="188,269,0,0" VerticalAlignment="Top" Width="48">
+            <ComboBoxItem Content="" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="10" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="92"/>
+        </ComboBox>
+        <ComboBox Name="WarrentyAdministrationComboBox" HorizontalAlignment="Left" Margin="188,352,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.604,1.364">
+            <ComboBoxItem Content="" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="10" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="92"/>
+        </ComboBox>
+        <ComboBox Name="MaintenanceComboBox" HorizontalAlignment="Left" Margin="431,114,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.604,1.364">
+            <ComboBoxItem Content="" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="10" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="92"/>
+        </ComboBox>
+        <ComboBox Name="LogisticsComboBox" HorizontalAlignment="Left" Margin="431,190,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.604,1.364">
+            <ComboBoxItem Content="" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="10" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="92"/>
+        </ComboBox>
+        <ComboBox Name="CommercialSupportComboBox" HorizontalAlignment="Left" Margin="431,269,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.604,1.364">
+            <ComboBoxItem Content="" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="10" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="92"/>
+        </ComboBox>
+        <ComboBox Name="OEMServiceComboBox" HorizontalAlignment="Left" Margin="431,352,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.604,1.364">
+            <ComboBoxItem Content="" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="10" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="92"/>
+        </ComboBox>
+        <ComboBox Name="TechAssistanceComboBox" HorizontalAlignment="Left" Margin="673,114,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.604,1.364">
+            <ComboBoxItem Content="" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="10" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="92"/>
+        </ComboBox>
+        <ComboBox Name="CSCComboBox" HorizontalAlignment="Left" Margin="673,190,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.604,1.364">
+            <ComboBoxItem Content="" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="10" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="92"/>
+        </ComboBox>
+        <ComboBox Name="CostOfOperationComboBox" HorizontalAlignment="Left" Margin="673,269,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.604,1.364">
+            <ComboBoxItem Content="" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="10" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="92"/>
+        </ComboBox>
+        <ComboBox Name="VendorManagementComboBox" HorizontalAlignment="Left" Margin="673,351,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.604,1.364">
+            <ComboBoxItem Content="" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="10" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="92"/>
+        </ComboBox>
+
+    </Grid>
+
+</Window>
+    

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Couchbase.Lite.Support.NetDesktop</name>
+    </assembly>
+    <members>
+        <member name="T:Couchbase.Lite.Support.NetDesktop">
+            <summary>
+            The .NET Desktop support class
+            </summary>
+        </member>
+        <member name="M:Couchbase.Lite.Support.NetDesktop.Activate">
+            <summary>
+            Activates the support classes for .NET Core / .NET Framework
+            </summary>
+        </member>
+        <member name="M:Couchbase.Lite.Support.NetDesktop.EnableTextLogging(System.String)">
+            <summary>
+            Turns on text based logging for debugging purposes.  The logs will be written 
+            to the directory specified in <paramref name="directoryPath"/>
+            </summary>
+            <param name="directoryPath">The directory to write logs to</param>
+        </member>
+        <member name="M:Couchbase.Lite.Support.NetDesktop.SetBinaryLogDirectory(System.String)">
+            <summary>
+            Directs the binary log files to write to the specified directory.  Useful if
+            the default directory does not have write permission.
+            </summary>
+            <param name="directoryPath">The path to write binary logs to</param>
+        </member>
+        <member name="T:Couchbase.Lite.Support.FileLogger">
+            <summary>
+            A default logging implementation that has a virtual method for doing the actual
+            log writing (useful as a base class to get preformatted messages for a custom logger)
+            </summary>
+        </member>
+        <member name="M:Couchbase.Lite.Support.FileLogger.Dispose">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
